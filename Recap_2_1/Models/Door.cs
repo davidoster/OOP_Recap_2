@@ -12,5 +12,10 @@ namespace Recap_2_1.Models
         {
             Console.WriteLine("This is a door");
         }
+
+        public override string ToString()
+        {
+            return "door";
+        }
     }
 }

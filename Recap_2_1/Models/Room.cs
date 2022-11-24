@@ -25,21 +25,40 @@ namespace Recap_2_1.Models
             Humans.Add(human);
             Animals = new List<Animal>();
             Animals.Add(animal);
-
+            Console.WriteLine("From the room");
             Console.WriteLine(this);
         }
-        
+
+        public Room(string name, RoomType roomType, Door door)
+        {
+            Name = name;
+            Type = roomType;
+            Doors = new List<Door>();
+            Doors.Add(door); // at least one Door exists per room
+            Humans = new List<Human>();
+            Animals = new List<Animal>();
+            Console.WriteLine("From the room2");
+            Console.WriteLine(this);
+        }
+
         public Room(string name, RoomType roomType, Door door, List<Human> humans, List<Animal> animals)
         {
             Name = name;
-            Type = roomType;    
+            Type = roomType;
+            Doors = new List<Door>();
             Doors.Add(door); // at least one Door exists per room
+            Humans = new List<Human>();
+            Animals = new List<Animal>();
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"{Name}\t{Type}\t{Doors}\t");
+            sb.AppendLine($"{Name}\t{Type}");
+            foreach (var door in Doors)
+            {
+                sb.AppendLine(door.ToString());
+            }
             foreach (var human in Humans)
             {
                 sb.AppendLine(human.ToString());

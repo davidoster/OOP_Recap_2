@@ -28,7 +28,18 @@ namespace Recap_2_1.Models
                 new Room("Living Room", RoomType.LIVING_ROOM, door, human, animal), // Rooms.Add(new Room("Living Room"));
                 new Room("Garden", RoomType.GARDEN, door),
             };
-            Console.WriteLine(this);
+            //Console.WriteLine("Form the house");
+            //Console.WriteLine(this);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var room in Rooms)
+            {
+                sb.AppendLine(room.ToString());
+            }
+            return sb.ToString();
         }
     }
 }
