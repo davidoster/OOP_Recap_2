@@ -49,6 +49,7 @@
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\Human.cs" />
     <Compile Include="Models\IAnimal.cs" />
+    <Compile Include="Models\IDoor.cs" />
     <Compile Include="Models\IHuman.cs" />
     <Compile Include="Models\Mouse.cs" />
     <Compile Include="Models\Name.cs" />

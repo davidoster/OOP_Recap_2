@@ -8,6 +8,7 @@ namespace Recap_2_1.Models
 {
     internal class Human : Name, IHuman
     {
+        public Room Room { get; set; }
         public Human(string name)
         {
             FirstName = name;
@@ -30,7 +31,12 @@ namespace Recap_2_1.Models
 
         public void Walk()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Human {FirstName} walks!!");
+        }
+
+        public void OpenDoor()
+        {
+            Room.Doors[0].Open();
         }
 
         public override string ToString()

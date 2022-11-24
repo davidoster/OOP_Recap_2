@@ -26,8 +26,9 @@ namespace Recap_2_1.Models
             Rooms = new List<Room>()
             {
                 new Room("Living Room", RoomType.LIVING_ROOM, door, human, animal), // Rooms.Add(new Room("Living Room"));
-                new Room("Garden", RoomType.GARDEN, door),
+                new Room("Garden", RoomType.GARDEN, door, null, new Mouse("Tom"))
             };
+            human.Room = Rooms[0];
             //Console.WriteLine("Form the house");
             //Console.WriteLine(this);
         }

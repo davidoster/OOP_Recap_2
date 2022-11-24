@@ -26,9 +26,18 @@ namespace Recap_2_1
             // Which are the states of the ...???
             // Owns ...???
 
-            House house = new House(new Human("John"), new Animal("Ann"));
+            House house = new House(new Human("John"), new Cat("Ann"));
+            Human john = house.Rooms[0].Humans[0];
+            john.Walk();
+            john.OpenDoor();
             //house.Rooms[0].Humans[0].LastName = "Johnakis";
             //Console.WriteLine(house.Rooms[0].Humans[0]);
+
+            // Exercises from HOME
+            // 1. Place cat Ann to the Garden
+            // 2. Make John to be the owner of:
+            // 2a. House
+            // 2b. cat's Ann
 
         }
     }

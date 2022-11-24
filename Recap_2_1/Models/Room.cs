@@ -22,7 +22,7 @@ namespace Recap_2_1.Models
             Doors = new List<Door>();
             Doors.Add(door); // at least one Door exists per room
             Humans = new List<Human>();
-            Humans.Add(human);
+            if (human != null) Humans.Add(human); // ? ternary or ?? null coalescing or ??= 
             Animals = new List<Animal>();
             Animals.Add(animal);
             Console.WriteLine("From the room");
