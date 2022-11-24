@@ -8,6 +8,10 @@ namespace Recap_2_1.Models
 {
     internal class Animal : Name, IAnimal
     {
+        public Animal(string name)
+        {
+            FirstName = name;
+        }
         public void Chase()
         {
             throw new NotImplementedException();

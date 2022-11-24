@@ -19,5 +19,15 @@ namespace Recap_2_1.Models
                 new Room("Garden", RoomType.GARDEN, door),
             };
         }
+
+        public House(Human human, Animal animal)
+        {
+            Door door = new Door();
+            Rooms = new List<Room>()
+            {
+                new Room("Living Room", RoomType.LIVING_ROOM, door, human, animal), // Rooms.Add(new Room("Living Room"));
+                new Room("Garden", RoomType.GARDEN, door),
+            };
+        }
     }
 }

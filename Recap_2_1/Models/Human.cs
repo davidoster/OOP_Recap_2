@@ -8,6 +8,10 @@ namespace Recap_2_1.Models
 {
     internal class Human : Name, IHuman
     {
+        public Human(string name)
+        {
+            FirstName = name;
+        }
         public void Look()
         {
             throw new NotImplementedException();

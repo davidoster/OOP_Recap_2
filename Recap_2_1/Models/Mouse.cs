@@ -8,5 +8,9 @@ namespace Recap_2_1.Models
 {
     internal class Mouse : Animal
     {
+        public override void Talk()
+        {
+            Console.WriteLine("Squeaks");
+        }
     }
 }

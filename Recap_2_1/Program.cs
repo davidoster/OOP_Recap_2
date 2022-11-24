@@ -26,24 +26,7 @@ namespace Recap_2_1
             // Which are the states of the ...???
             // Owns ...???
 
-            //Name name = new Name();
-            Human john = new Human();
-            john.FirstName = "John";
-            Console.WriteLine(john.FirstName);
-
-            Animal ann = new Cat();
-            ann.FirstName = "Ann";
-            ann.Talk();
-
-            Cat cat = new Cat();
-            cat.Talk();
-            
-
-            Animal tom = new Animal();
-            tom.FirstName = "Tom";
-
-            House house = new House();
-            Console.WriteLine(house.Rooms[0].Name);
+            House house = new House(new Human("John"), new Animal("Ann"));
 
         }
     }
