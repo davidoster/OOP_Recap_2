@@ -27,6 +27,8 @@ namespace Recap_2_1
             // Owns ...???
 
             House house = new House(new Human("John"), new Animal("Ann"));
+            //house.Rooms[0].Humans[0].LastName = "Johnakis";
+            //Console.WriteLine(house.Rooms[0].Humans[0]);
 
         }
     }

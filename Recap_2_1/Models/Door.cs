@@ -8,5 +8,9 @@ namespace Recap_2_1.Models
 {
     internal class Door
     {
+        public Door()
+        {
+            Console.WriteLine("This is a door");
+        }
     }
 }

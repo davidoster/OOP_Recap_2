@@ -11,6 +11,7 @@ namespace Recap_2_1.Models
         public Human(string name)
         {
             FirstName = name;
+            Console.WriteLine(this);
         }
         public void Look()
         {
@@ -30,6 +31,11 @@ namespace Recap_2_1.Models
         public void Walk()
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return $"{FirstName}\t{LastName}";
         }
     }
 }

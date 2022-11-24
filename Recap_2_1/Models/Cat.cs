@@ -8,6 +8,10 @@ namespace Recap_2_1.Models
 {
     internal class Cat : Animal
     {
+        public Cat(string name) : base(name)
+        {
+
+        }
         public override void Talk()
         {
             Console.WriteLine("Niaou");

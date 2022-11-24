@@ -28,6 +28,7 @@ namespace Recap_2_1.Models
                 new Room("Living Room", RoomType.LIVING_ROOM, door, human, animal), // Rooms.Add(new Room("Living Room"));
                 new Room("Garden", RoomType.GARDEN, door),
             };
+            Console.WriteLine(this);
         }
     }
 }
