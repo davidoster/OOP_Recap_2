@@ -11,6 +11,7 @@ namespace Recap_2_1.Models
         public override void Talk()
         {
             Console.WriteLine("Niaou");
+            Console.WriteLine();
         }
     }
 }
