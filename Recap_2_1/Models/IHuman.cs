@@ -2,5 +2,9 @@
 {
     internal interface IHuman
     {
+        void Walk();
+        void Run();
+        void Look();
+        void Talk();
     }
 }

@@ -20,7 +20,7 @@ namespace Recap_2_1
             // Ann looks at the mouse Tom, Tom looks at the cat Ann, Ann starts to run and chases Tom
 
             // John - Human, Ann - Cat (Animal), Tom - Mouse (Animal)
-            // House, Garden, Door, Room
+            // House, Garden, Door, (Living) Room
             // Which are the props of the ...?
             // Which are the methods (behaviours) of the ...?
             // Which are the states of the ...???
@@ -41,6 +41,9 @@ namespace Recap_2_1
 
             Animal tom = new Animal();
             tom.FirstName = "Tom";
+
+            House house = new House();
+            Console.WriteLine(house.Rooms[0].Name);
 
         }
     }

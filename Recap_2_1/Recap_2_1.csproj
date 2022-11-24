@@ -45,11 +45,15 @@
   <ItemGroup>
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Cat.cs" />
+    <Compile Include="Models\Door.cs" />
+    <Compile Include="Models\House.cs" />
     <Compile Include="Models\Human.cs" />
     <Compile Include="Models\IAnimal.cs" />
     <Compile Include="Models\IHuman.cs" />
     <Compile Include="Models\Mouse.cs" />
     <Compile Include="Models\Name.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
