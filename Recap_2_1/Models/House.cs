@@ -9,6 +9,7 @@ namespace Recap_2_1.Models
     internal class House
     {
         public List<Room> Rooms { get; set; }
+        public IHuman Owner { get; set; }
 
         public House()
         {
@@ -30,6 +31,7 @@ namespace Recap_2_1.Models
             };
             human.Room = Rooms[0];
             animal.Room = Rooms[0];
+            Owner = human;
             //Console.WriteLine("Form the house");
             //Console.WriteLine(this);
         }
