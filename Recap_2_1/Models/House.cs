@@ -29,6 +29,7 @@ namespace Recap_2_1.Models
                 new Room("Garden", RoomType.GARDEN, door, null, new Mouse("Tom"))
             };
             human.Room = Rooms[0];
+            animal.Room = Rooms[0];
             //Console.WriteLine("Form the house");
             //Console.WriteLine(this);
         }

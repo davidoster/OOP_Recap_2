@@ -12,18 +12,18 @@ namespace Recap_2_1.Models
         public RoomType Type { get; set; }
         public List<Door> Doors { get; set; }
         // Human (IHuman), Animal (IAnimal)
-        public List<Human> Humans { get; set; }     
-        public List<Animal> Animals { get; set; }     
+        public List<IHuman> Humans { get; set; }     
+        public List<IAnimal> Animals { get; set; }     
 
-        public Room(string name, RoomType roomType, Door door, Human human = null, Animal animal = null)
+        public Room(string name, RoomType roomType, Door door, IHuman human = null, IAnimal animal = null)
         {
             Name = name;
             Type = roomType;
             Doors = new List<Door>();
             Doors.Add(door); // at least one Door exists per room
-            Humans = new List<Human>();
+            Humans = new List<IHuman>();
             if (human != null) Humans.Add(human); // ? ternary or ?? null coalescing or ??= 
-            Animals = new List<Animal>();
+            Animals = new List<IAnimal>();
             Animals.Add(animal);
             Console.WriteLine("From the room");
             Console.WriteLine(this);
@@ -35,13 +35,13 @@ namespace Recap_2_1.Models
             Type = roomType;
             Doors = new List<Door>();
             Doors.Add(door); // at least one Door exists per room
-            Humans = new List<Human>();
-            Animals = new List<Animal>();
+            Humans = new List<IHuman>();
+            Animals = new List<IAnimal>();
             Console.WriteLine("From the room2");
             Console.WriteLine(this);
         }
 
-        public Room(string name, RoomType roomType, Door door, List<Human> humans, List<Animal> animals)
+        public Room(string name, RoomType roomType, Door door, List<IHuman> humans, List<IAnimal> animals)
         {
             Name = name;
             Type = roomType;

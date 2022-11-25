@@ -8,6 +8,7 @@ namespace Recap_2_1.Models
 {
     internal class Animal : Name, IAnimal
     {
+        public Room Room { get; set; }
         public Animal(string name)
         {
             FirstName = name;

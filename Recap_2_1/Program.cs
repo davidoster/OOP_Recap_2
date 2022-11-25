@@ -27,7 +27,7 @@ namespace Recap_2_1
             // Owns ...???
 
             House house = new House(new Human("John"), new Cat("Ann"));
-            Human john = house.Rooms[0].Humans[0];
+            IHuman john = house.Rooms[0].Humans[0];
             john.Walk();
             john.OpenDoor();
             //house.Rooms[0].Humans[0].LastName = "Johnakis";
@@ -35,6 +35,19 @@ namespace Recap_2_1
 
             // Exercises from HOME
             // 1. Place cat Ann to the Garden
+            Room livingRoom = house.Rooms[0];
+            Room garden = house.Rooms[1];
+            IAnimal ann = livingRoom.Animals[0]; // υπόθεση
+            garden.Animals.Add(ann);
+            livingRoom.Animals.Remove(ann);
+            Console.WriteLine(livingRoom);
+            Console.WriteLine(garden);
+
+            IAnimal someAnimal = new Cat("sdfsdf");
+            IAnimal someAnimal2 = new Mouse("sdfsdf");
+            IAnimal someAnimal3 = new Animal("sdsdf");
+            Animal animal = new Cat("Ann2");
+
             // 2. Make John to be the owner of:
             // 2a. House
             // 2b. cat's Ann

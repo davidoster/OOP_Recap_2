@@ -6,5 +6,6 @@
         void Run();
         void Look();
         void Talk();
+        void OpenDoor();
     }
 }
